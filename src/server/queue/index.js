@@ -17,6 +17,16 @@ class Queues {
       }
     };
 
+    this.appTitle = {
+      value: 'Arena',
+      get appTitle() {
+        return this.value;
+      },
+      set appTitle(newValue) {
+        this.value = newValue;
+      }
+    };
+
     this.setConfig(config);
   }
 

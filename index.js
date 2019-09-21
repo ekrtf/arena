@@ -9,6 +9,7 @@ function run(config, listenOpts = {}) {
 
   if (config) Queues.setConfig(config);
   Queues.useCdn = typeof listenOpts.useCdn !== 'undefined' ? listenOpts.useCdn : true;
+  Queues.appTitle = typeof listenOpts.appTitle !== 'undefined' ? listenOpts.appTitle : 'Arena';
 
   app.locals.appBasePath = listenOpts.basePath || app.locals.appBasePath;
 

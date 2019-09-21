@@ -53,4 +53,8 @@ module.exports = function registerHelpers(hbs, { queues }) {
   hbs.registerHelper('useCdn', () => {
     return queues.useCdn;
   });
+
+  hbs.registerHelper('appTitle', () => {
+    return queues.appTitle;
+  });
 };
